@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
+
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -15,7 +17,27 @@ module.exports = {
         '2xl': '1400px'
       }
     },
+    colors: {
+      primary: colors.rose[600],
+      success: colors.emerald[400],
+      dark: colors.slate[700],
+      black: colors.black,
+      blue: colors.blue,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      pink: colors.pink,
+      rose: colors.rose,
+      red: colors.red,
+      neutral: colors.neutral,
+      slate: colors.slate,
+      transparent: colors.transparent
+    },
     extend: {}
   },
   plugins: [require('tailwindcss-animate')]
 }
+
+export default config
