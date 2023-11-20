@@ -20,6 +20,7 @@ const config: Config = {
     colors: {
       primary: colors.rose[600],
       success: colors.emerald[400],
+      secondary: colors.indigo[600],
       dark: colors.slate[700],
       black: colors.black,
       blue: colors.blue,
