@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Footer from '@/components/shared/footer'
 import LogoBar from '@/components/shared/header/LogoBar'
 import Navbar from '@/components/shared/header/Navbar'
